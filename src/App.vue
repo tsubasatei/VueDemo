@@ -1,3 +1,5 @@
+<!--根组件-->
+<!--组件：实现局部功能界面(html/css/js/img)-->
 <template>
   <div>
     <img class="logo" src="./assets/logo.png" alt="logo">

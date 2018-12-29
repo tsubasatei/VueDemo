@@ -8,7 +8,7 @@ import App from './App.vue'
 new Vue({
   el: '#app',
   components: {
-    App
+    App      // 将组件APP映射成标签名APP
   },
-  template: '<App/>'
+  template: '<App/>'   // 使用组件标签，将标签APP所代表的内容匹配到el指定的div中
 })
