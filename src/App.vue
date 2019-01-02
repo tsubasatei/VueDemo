@@ -1,28 +1,34 @@
-<!--根组件-->
-<!--组件：实现局部功能界面(html/css/js/img)-->
 <template>
   <div>
-    <img class="logo" src="./assets/logo.png" alt="logo">
-    <!--3. 使用组件标签-->
-    <HelloWorld/>
+    <header class="site-header jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>请发表对Vue的评论</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <Add/>
+      <List/>
+    </div>
   </div>
 </template>
 
 <script>
-  // 1. 引入组件
-  import HelloWorld from './components/HelloWorld.vue'
+    import Add from './components/Add'
+    import List from './components/List'
 
-  export default {
-    // 2. 映射组件标签
-    components: {
-      HelloWorld
+    export default {
+      el: '#container',
+      comments: {
+        Add,
+        List
+      }
     }
-  }
 </script>
 
 <style>
-  .logo {
-    width: 200px;
-    height: 200px
-  }
+
 </style>
